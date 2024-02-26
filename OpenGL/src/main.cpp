@@ -28,7 +28,7 @@ void display() {
     // Render a pyramid consists of 4 triangles
     glLoadIdentity();                  // Reset the model-view matrix
     glTranslatef(0.0f, 0.0f, -25.0f);  // Move left and into the screen
-    glRotatef(anglePyramid, 0.0f, 1.0f, 0.0f);
+    glRotatef(anglePyramid, 1.0f, 1.0f, 1.0f);
 
     glBegin(GL_TRIANGLES); // Begin drawing the pyramid with 4 triangles
 
