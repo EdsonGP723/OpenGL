@@ -178,18 +178,6 @@ void renderObjs() {
 	//apply the computed rotation
 	glMultMatrixf((float*)M);
 
-	//draw vertices
-	if (draw_axis) {
-		glColor3f(0, 1, 1);
-		glBegin(GL_LINES);
-		glVertex3f(0, 0, 0);
-		glVertex3f(1, 0, 0);
-		glVertex3f(0, 0, 0);
-		glVertex3f(0, 1, 0);
-		glVertex3f(0, 0, 0);
-		glVertex3f(0, 0, 1);
-		glEnd();
-	}
 	//are we animating this?
 	if (animate == true) {
 		//draw all the non-slice cubelets
